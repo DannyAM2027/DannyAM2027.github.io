@@ -317,17 +317,17 @@ span{
 .blog .description-1,
 .blog .description-2,
 .blog .description-3 {
-    line-height: 1.5; /* Sets the line height for readability */
-    font-size: 1.5rem; /* Font size for the description */
-    color: #555; /* Text color */
+    line-height: 1.5; 
+    font-size: 1.5rem; 
+    color: #555; 
 }
 
 .blog .description-1 span,
 .blog .description-2 span,
 .blog .description-3 span {
-    line-height: 1.5; /* Line height for better readability */
-    font-size: 1.6rem; /* Font size for the span text */
-    color: rgb(254, 240, 230); /* Text color for span */
+    line-height: 1.5; 
+    font-size: 1.6rem; 
+    color: rgb(254, 240, 230); 
 }
 
 /* Responsive styling for smaller screens */
