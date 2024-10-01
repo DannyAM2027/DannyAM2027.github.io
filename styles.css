@@ -36,7 +36,7 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: rgb(83, 139, 87);
+    color: seagreen;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -205,7 +205,7 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Web Developer";
+        content: "Software Developer";
     }
     21%, 40%{
         content: "Web Designer";
@@ -258,17 +258,19 @@ span{
     margin: 0 auto;
     text-align: center;
 }
-
+/* work here*/
+.resume-title,
 .blog-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    margin: 20rem auto 0;
+    margin: 20rem auto 2rem;
     text-align: center;
-    width: 50%; 
-    height: 34px;
-    color: #333;
+    width: 29%; 
+    height: 8%;
+    border-bottom: solid rgb(83, 139, 87);
+    color: rgb(255, 255, 255);
 }
 
 .blog span {
@@ -296,8 +298,8 @@ span{
 .blog .post-1:hover,
 .blog .post-2:hover,
 .blog .post-3:hover {
-    box-shadow: 0 0 25px #be9999; /* Glow effect */
-    transform: scale(1.05); /* Enlarges the post */
+    box-shadow: 0 0 25px #be9999;
+    transform: scale(1.05); 
 }
 
 .blog img {
@@ -313,7 +315,7 @@ span{
     margin-bottom: 1rem;
 }
 
-/* Post description */
+
 .blog .description-1,
 .blog .description-2,
 .blog .description-3 {
@@ -330,18 +332,23 @@ span{
     color: rgb(254, 240, 230); 
 }
 
-/* Responsive styling for smaller screens */
+
 @media screen and (max-width: 995px) {
+    .blog-title{
+        width: 50%; 
+        height: 10%;
+        border-bottom: solid rgb(83, 139, 87);
+    }
     .blog{
         flex-direction: column;
     }
     .blog .post-1,
     .blog .post-2,
     .blog .post-3 {
-        flex-direction: column;  /* Stack the content vertically */
-        width: 100%;  /* Full width for post-1 */
-        height: auto;  /* Allow height to adjust automatically */
-        margin-bottom: 2rem;  /* Space below post-1 */
+        flex-direction: column; 
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 2rem; 
     }
     .blog img {
         width: 90%;
@@ -351,4 +358,224 @@ span{
         margin-bottom: 1rem;
     }
 
+
+}
+.resume-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 550;
+    margin: 6rem auto 4rem;
+    border-radius: 2rem;
+    background-color: rgb(83, 139, 87);
+    width: 20%; 
+    height: 34px;
+    transition: 0.3s ease;
+    color: #333;
+}
+
+.resume-link:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 25px rgb(83, 139, 87);
+}
+
+
+.resume-info {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    max-width: 900px;
+    height: 10%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: rgb(226, 232, 227);
+}
+
+
+.resume-info .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: left;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+
+.resume-info .summary{
+    margin-top: 2rem;
+}
+
+.resume-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+
+.resume-info .entry {
+    margin-bottom: 2rem;
+}
+
+.resume-info .entry-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.resume-info .entry-info {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.resume-info .entry-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+
+.resume-info .skill-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.resume-info .skill-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 995px) {
+    .resume-title{
+        width: 70%;
+        height: 12%;
+    }
+    .resume-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: 550;
+        margin: 6rem auto 4rem;
+        border-radius: 2rem;
+        width: 40%; 
+        height: 34px;
+
+        color: #333;
+    }
+    .resume-info {
+        padding: 1rem;
+    }
+    
+    .resume-info .section-title {
+        font-size: 1.5rem;
+    }
+
+    .resume-info .entry-title {
+        font-size: 1.2rem;
+    }
+
+    .resume-info .skill-list {
+        font-size: 0.9rem;
+    }
+}
+
+.contact {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20vb auto 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+.contact:hover{
+    box-shadow: 0 0 25px rgb(83, 139, 87);
+    transform: scale(1.01);
+}
+
+
+.contact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#contact-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #444;
+    align-self: flex-start;
+}
+
+
+#contact-form input[type="text"],
+#contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#submit {
+    background-color: #4CAF50;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: rgb(83, 139, 87);
+    color: white;
+}
+
+
+@media screen and (max-width: 995px) {
+    .contact {
+        padding: 30rem auto 0;
+        margin: 30vb auto 0;
+    }
+    
+    #contact-form input[type="text"],
+    #contact-form textarea {
+        width: 100%;
+        font-size: 0.9rem;
+    }
 }

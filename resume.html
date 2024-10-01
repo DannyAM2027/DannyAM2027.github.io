@@ -2,83 +2,89 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Personal Website</title>
+    <title>Daniel Miranda | Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href= "rocket-lunch.png" type="image/x-icon">
+    <link rel="icon" href="rocket-lunch.png" type="image/x-icon">
   </head>
 
   <body>
 
     <header>
-        <a href="index.html" class="logo"> Daniel Miranda</a>
-    
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="resume.html" class="active">Resume</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
+      <a href="index.html" class="logo">Daniel Miranda</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
+
+    <div class="resume-title">
+        <h1>Check out my <span>Resume!</span></h1>
+    </div>
+
+    <div>
+        <a class="resume-link" href="Resume_1.4* copy.pdf" target="_blank">Download Resume</a>
+    </div>
  
     <main>
-        <h1 class="page-title">Resume</h1>
-        <a href="resume_1.4*.pdf" download>Download Resume</a>
-        <p>This is the Resume page</p>
 
+      <section class="resume-info">
+        <!-- Summary Section -->
+        <p class="summary">Seeking opportunities in backend development or embedded systems where I can leverage my technical skills and project experience to solve complex problems and contribute to innovative solutions.</p>
+
+        <!-- Education Section -->
         <h1 class="section-title">Education</h1>
         <div class="entry">
-            <!-- Entry Title for Education -->
             <h3 class="entry-title">Bachelor of Science in Computer Science</h3>
-            <!-- Entry Info for Education -->
-            <p class="entry-info">Cal Poly, Expected Graduation: June 2027</p>
+            <p class="entry-info">California Polytechnic State University, San Luis Obispo, CA<br>Sept. 2023 - June 2027</p>
+            <p class="entry-description">
+            Relevant coursework: Proj-Based Object-Oriented Programming & Design*, Introduction to Computer Organization*, Data Structures, Fundamentals of Computer Science (* indicates currently taking)<br>
+            Activities & Societies: Society of Hispanic Professional Engineers (SHPE)
+            </p>
         </div>
-        
+
         <!-- Experience Section -->
         <h1 class="section-title">Experience</h1>
+
         <div class="entry">
-            <!-- Entry Title for Experience -->
-            <h3 class="entry-title">Software Developer Intern</h3>
-            <!-- Entry Info for Experience -->
-            <p class="entry-info">Company XYZ, June 2023 - August 2023</p>
-            <!-- Entry Description for Experience -->
-            <p class="entry-description">Worked on backend development, optimizing database queries, and enhancing system performance.</p>
+            <h3 class="entry-title">Front-End Web Developer</h3>
+            <p class="entry-info">Milli Transportation Inc., June 2024</p>
+            <p class="entry-description">Designed a front-end page for a trucking company using Python, HTML, CSS, and JavaScript to streamline client interaction. Collaborated with the company to adapt the webpage to specific business goals.</p>
         </div>
-        
-        <!-- Projects Section -->
-        <h1 class="section-title">Projects</h1>
+
         <div class="entry">
-            <!-- Entry Title for Projects -->
-            <h3 class="entry-title">GeoGroove - Location-Based Music Recommendation System</h3>
-            <!-- Entry Info for Projects -->
-            <p class="entry-info">Developed in Python, Flask, and PostgreSQL</p>
-            <!-- Entry Description for Projects -->
-            <p class="entry-description">Built a system that recommends music based on the user's current location and preferences using machine learning algorithms.</p>
+            <h3 class="entry-title">Back-End Software Engineer</h3>
+            <p class="entry-info">GeoGroove, June 2024 - Aug 2024</p>
+            <p class="entry-description">Developed a location-based music recommendation system utilizing Python, Leaflet.js, and various APIs to recommend music based on user location and preferences. Integrated learning algorithms to enhance user experience over time.</p>
         </div>
-        
-        <!-- Coursework Section -->
-        <h1 class="section-title">Coursework</h1>
-        <ul class="course-list">
-            <li>Data Structures and Algorithms</li>
-            <li>Operating Systems</li>
-            <li>Database Systems</li>
-            <li>Software Engineering</li>
-        </ul>
-        
+
+        <div class="entry">
+            <h3 class="entry-title">Front-End Software Engineer</h3>
+            <p class="entry-info">Abuelita's Kitchen, 2020-2021</p>
+            <p class="entry-description">Created a multi-page cooking and recipe website focusing on user-friendly navigation and visual appeal. Featured a collection of diverse recipes, allowing users to post reviews and sort dishes by relevance and ratings.</p>
+        </div>
+
+        <div class="entry">
+            <h3 class="entry-title">Software Engineer</h3>
+            <p class="entry-info">Nuke Type, Oct 2023 - Nov 2023</p>
+            <p class="entry-description">Co-developed a pop-up typing game using Python, Flask, and Tkinter, designed to improve typing speed and accuracy. Built core functionality and collaborated with a partner to ensure seamless gameplay.</p>
+        </div>
+
         <!-- Skills Section -->
         <h1 class="section-title">Skills</h1>
         <ul class="skill-list">
-            <li>Python, Java, C++</li>
-            <li>SQL, NoSQL Databases</li>
-            <li>Version Control (Git, GitHub)</li>
-            <li>Backend Development (Flask, Node.js)</li>
+            <li>Front End: Python, Javascript, TypeScript, CSS, JSON, styled-components</li>
+            <li>Back End: C, C++, MySQL, Flask, JQuery</li>
+            <li>Developer Tools: Insomnia, Git, GitHub, Slack, npm</li>
         </ul>
+      </section>
 
     </main>
 
     <footer class="footer">
-        <p>© 2023 Daniel's Personal Website | All Rights Reserved</p>
+      <p>© 2023 Daniel Miranda | All Rights Reserved</p>
     </footer>
 
   </body>
