@@ -575,6 +575,35 @@ span{
         width: 100%;
         font-size: 0.9rem;
     }
+    .project {
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center; /* Center align project details */
+        padding: 20px;
+    }
+
+    .project-image {
+        width: 100%; /* Make image responsive to screen width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add spacing between image and details */
+    }
+
+    .project-details {
+        width: 100%; /* Make the project details take full width */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .project-name {
+        font-size: 1.5rem; /* Slightly reduce the size of the project name */
+    }
+
+    .project-description {
+        font-size: 1rem; /* Adjust text size for better readability */
+    }
+
+    .project-link {
+        padding: 12px 24px; /* Adjust padding for buttons */
+        font-size: 1rem; /* Slightly larger text for the button */
+    }
 }
 
 
