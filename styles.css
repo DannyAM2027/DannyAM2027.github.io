@@ -299,7 +299,7 @@ span{
 .blog .post-1:hover,
 .blog .post-2:hover,
 .blog .post-3:hover {
-    box-shadow: 0 0 25px #be9999;
+    box-shadow: 0 0 25px rgb(83, 139, 87);
     transform: scale(1.02); 
 }
 
