@@ -304,16 +304,17 @@ span{
 }
 
 .blog img {
-    width: 90%;
-    margin-left: 24px;
+    width: 50%;
+    margin-left: 25%;
     height: 25%;
-    border-bottom: 1px solid rgb(83, 139, 87);
     margin-bottom: 1rem;
 }
 
 .blog h2 {
     font-size: 1.9rem;
-    margin-bottom: 1rem;
+    color: white;
+    border-top: solid #333;
+    margin-bottom: 2rem;
 }
 
 
@@ -354,8 +355,8 @@ span{
     .blog img {
         width: auto 2rem;
         margin-left: 20px;
-        height: 100%;
-        border-bottom: 1px solid rgb(83, 139, 87);
+        height: 30rem;
+        margin-left: 25%;
         margin-bottom: 1rem;
     }
 
