@@ -288,7 +288,7 @@ span{
     text-align: left;
     margin: 0 1%;
     margin-top: 5rem;
-    background-color: #be9999;
+    background-color: rgb(240, 241, 240);
     box-shadow: 0 4px 8px rgba(6, 6, 6, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -312,7 +312,7 @@ span{
 
 .blog h2 {
     font-size: 2rem;
-    color: white;
+    color: #333;
     border-top: solid #333;
     margin-bottom: 2rem;
 }
@@ -330,8 +330,9 @@ span{
 .blog .description-2 span,
 .blog .description-3 span {
     line-height: 1.5; 
-    font-size: 1.6rem; 
-    color: rgb(254, 240, 230); 
+    font-size: 1.7rem; 
+    font-weight: 600;
+    color: seagreen;
 }
 
 
