@@ -259,16 +259,17 @@ span{
     text-align: center;
 }
 /* work here*/
+.portfolio-title,
 .resume-title,
 .blog-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    margin: 20rem auto 2rem;
+    margin: 20rem auto 1rem;
     text-align: center;
     width: 29%; 
-    height: 8%;
+    height: 14%;
     border-bottom: solid rgb(83, 139, 87);
     color: rgb(255, 255, 255);
 }
@@ -299,13 +300,13 @@ span{
 .blog .post-2:hover,
 .blog .post-3:hover {
     box-shadow: 0 0 25px #be9999;
-    transform: scale(1.05); 
+    transform: scale(1.02); 
 }
 
 .blog img {
     width: 90%;
     margin-left: 24px;
-    height: 39%;
+    height: 25%;
     border-bottom: 1px solid rgb(83, 139, 87);
     margin-bottom: 1rem;
 }
@@ -351,9 +352,9 @@ span{
         margin-bottom: 2rem; 
     }
     .blog img {
-        width: 90%;
+        width: auto 2rem;
         margin-left: 20px;
-        height: 10%;
+        height: 100%;
         border-bottom: 1px solid rgb(83, 139, 87);
         margin-bottom: 1rem;
     }
@@ -383,29 +384,26 @@ span{
 }
 
 
+
 .resume-info {
     font-family: Arial, sans-serif;
-    padding: 2rem;
     max-width: 900px;
-    height: 10%;
-    margin: 0 auto;
-    border-radius: 2rem;
-    background-color: rgb(226, 232, 227);
+    margin: 10rem auto 0; 
+    padding: 50px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    min-height: 100; 
 }
-
 
 .resume-info .section-title {
     font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1rem;
     color: #333;
-    text-align: left;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
-}
-
-
-.resume-info .summary{
-    margin-top: 2rem;
 }
 
 .resume-info p {
@@ -415,14 +413,13 @@ span{
     color: #555;
 }
 
-
 .resume-info .entry {
     margin-bottom: 2rem;
 }
 
 .resume-info .entry-title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     color: #222;
 }
@@ -439,10 +436,9 @@ span{
     color: #444;
 }
 
-
 .resume-info .skill-list {
     list-style-type: disc;
-    padding-left: 1.5rem;
+    padding-left: 20px;
     color: #555;
     margin-bottom: 2rem;
 }
@@ -488,6 +484,8 @@ span{
     }
 }
 
+
+
 .contact {
     font-family: Arial, sans-serif;
     max-width: 600px;
@@ -495,8 +493,7 @@ span{
     padding: 1rem;
     background-color: #f9f9f9;
     border-radius: 10px;
-    border: solid transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid rgba(83, 139, 87, 0.867);
     transition: 0.3s ease;
 }
 .contact:hover{
@@ -578,4 +575,72 @@ span{
         width: 100%;
         font-size: 0.9rem;
     }
+}
+
+
+
+
+
+
+
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240, 243, 240);
+    margin: 2rem auto;
+    padding: 20px;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.project:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px;
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+    text-align: left;
+}
+
+.project-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s ease;
+
+}
+
+.project-link:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
 }
